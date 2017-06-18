@@ -12,6 +12,17 @@ People say the media has a huge role in shaping the public opinion. But it is no
 To address those questions, we did different analysis about the number of article published by the media about the different candidates, the tweets and a sentimental analysis on the speech of the candidates.
 
 To run the website :
-1- Run App.py (this runs the Flask server at 127.0.0.1:5000)
-2- Use your navigator and go to 127.0.0.1:5000
-3- Enjoy
+<ol>
+    <li>Run App.py (this runs the Flask server at 127.0.0.1:5000)</li>
+    <li>Use your navigator and go to 127.0.0.1:5000</li>
+    <li>Enjoy</li>
+</ol>
+
+The team of the project:
+<ol>
+<ul>Nomin-Erdene Oyun</ul>
+<ul>Barbara Stickel</ul>
+<ul>Ankur Radjev</ul>
+<ul>Yassine Chakir</ul>
+<ul>Olivier Azan</ul>
+</ol>
