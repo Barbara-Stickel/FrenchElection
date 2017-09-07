@@ -11,7 +11,7 @@ from flask import Flask, render_template
 #import gmplot
 #import pandas
 
-from nltk.tokenize import sent_tokenize
+#from nltk.tokenize import sent_tokenize
 #from ClassyFire import *
 #from twitter_analysis import *
 #from party_cand_twitter import *
