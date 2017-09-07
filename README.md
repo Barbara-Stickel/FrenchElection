@@ -11,9 +11,11 @@ People say the media has a huge role in shaping the public opinion. But it is no
 
 To address those questions, we did different analysis about the number of article published by the media about the different candidates, the tweets and a sentimental analysis on the speech of the candidates.
 
-To run the website :
+The web app adress is: https://french-election.herokuapp.com/
+
+To run the app locally :
 <ol>
-    <li>Run App.py (this runs the Flask server at 127.0.0.1:5000)</li>
+    <li>Type in your command line "python app.py" (this runs the Flask server at 127.0.0.1:5000)</li>
     <li>Use your navigator and go to 127.0.0.1:5000</li>
     <li>Enjoy</li>
 </ol>
