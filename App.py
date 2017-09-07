@@ -4,7 +4,6 @@ from flask import Flask, request, session, g, redirect, url_for, abort, render_t
 
 
 from flask_wtf import FlaskForm
-from wtforms.fields.html5 import DateField
 from wtforms.fields import SelectMultipleField, SelectField
 from flask import Flask, render_template
 from datetime import date
@@ -52,39 +51,39 @@ def panel4():
 	return [filename1, filename2]
 
 def graph_per_media():
-	graph_media('LeFigaro')
+	#graph_media('LeFigaro')
 	filename1 = 'number_articles_media_{}.html'.format('LeFigaro')
-	graph_media('LeMonde')
+	#graph_media('LeMonde')
 	filename2 = 'number_articles_media_{}.html'.format('LeMonde')
-	graph_media('France24')
+	#graph_media('France24')
 	filename3 = 'number_articles_media_{}.html'.format('France24')
 	return [filename1, filename2, filename3]
 
 def graph_per_candidate():
-	graph_candidate('Le Pen')
+	#graph_candidate('Le Pen')
 	filename1 = 'number_articles_candidate_{}.html'.format('Le Pen')
-	graph_candidate('Fillon')
+	#graph_candidate('Fillon')
 	filename2 = 'number_articles_candidate_{}.html'.format('Fillon')
-	graph_candidate('Macron')
+	#graph_candidate('Macron')
 	filename3 = 'number_articles_candidate_{}.html'.format('Macron')
-	graph_candidate('Hamon')
+	#graph_candidate('Hamon')
 	filename4 = 'number_articles_candidate_{}.html'.format('Hamon')
-	graph_candidate('Melenchon')
+	#graph_candidate('Melenchon')
 	filename5 = 'number_articles_candidate_{}.html'.format('Melenchon')
 	return [filename1, filename2, filename3, filename4, filename5]
 
 def twitter():
-	graph_total()
+	#graph_total()
 	filename1 = 'number_articles_total.html'
-	graph_twitter_all_tweets()
+	#graph_twitter_all_tweets()
 	filename2 = 'total_number_tweets.html'
-	graph_twitter_all_tweets_candidates()
+	#graph_twitter_all_tweets_candidates()
 	filename3 = 'all_tweets_candidates.html'
-	graph_twitter_pos_tweets()
+	#graph_twitter_pos_tweets()
 	filename4 = 'positive_tweets.html'
-	graph_twitter_neg_tweets()
+	#graph_twitter_neg_tweets()
 	filename5 = 'negative_tweets.html'
-	graph_twitter_pos_neg_tweets()
+	#graph_twitter_pos_neg_tweets()
 	filename6 = 'pos_neg_tweets.html'
 	return [filename1, filename2, filename3, filename4, filename5, filename6]
 
@@ -100,13 +99,13 @@ def sentimental_analysis():
 	return [filename1, filename2, filename3, filename4, filename5, filename6, filename7, filename8]
 
 def twitter_party():
-	graph_twitter_all_tweets_party()
+	#graph_twitter_all_tweets_party()
 	filename1 = 'all_tweets_party.html'
-	graph_twitter_pos_tweets_party()
+	#graph_twitter_pos_tweets_party()
 	filename2 = 'tweets_party_pos.html'
-	graph_twitter_neg_tweets_party()
+	#graph_twitter_neg_tweets_party()
 	filename3 = 'tweets_party_neg.html'
-	graph_twitter_pos_neg_tweets_party()
+	#graph_twitter_pos_neg_tweets_party()
 	filename4 = 'tweets_party_pos_neg.html'
 	return [filename1, filename2, filename3, filename4]
 
@@ -167,4 +166,4 @@ def analysis_4():
 	return render_template('analysis_4.html', picture2 = twitter(),picture1 = twitter_party(), links=get_homepage_links(), analysis_links=analysis_link())
 
 if __name__ == '__main__':
-   app.run() #debug=True
+   app.run() 
